@@ -726,6 +726,15 @@ ol {
     color: red;
 }
 
+.question-email.error {
+    border: 1.5px solid red;
+    color: red;
+}
+
+.question-email.error::placeholder {
+    color: red;
+}
+
 .question-textarea {
     height: 150px;
 }
