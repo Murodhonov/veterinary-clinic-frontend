@@ -1,0 +1,8 @@
+.board{
+    display: grid;
+    grid-template-columns: repeat(8,40px);
+    grid-template-rows: repeat(8,40px);
+}
+.board div{   
+    border: 1.3px solid black;
+}
