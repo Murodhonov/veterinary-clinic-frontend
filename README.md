@@ -1,5 +1,5 @@
 # Veterinary Clinic Website
-
+![Veterinary Clinic](https://github.com/Murodhonov/veterinary-clinic-frontend/blob/main/pics/image_for_github.jpg)
 ## Overview
 This project is a responsive and user-friendly website for a veterinary clinic, designed to provide essential information and services to pet owners. The website uses HTML and CSS and includes various sections to enhance user experience.
 
