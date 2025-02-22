@@ -97,6 +97,17 @@ ol {
     list-style: none;
 }
 
+input {
+    border: none;
+    outline: none;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
 .header-topside {
     background-color: #F9F8F8;
     padding: 10px;
@@ -174,11 +185,14 @@ ol {
 .footer-address:active,
 .footer-calls__item a:active,
 .fmenu__item a:active,
-.item__readmore2:active,
+.item__readmore2:hover,
 .location-address__link:active,
 .open-hours__item:active,
 .facility-numbers__item a:active {
     opacity: 0.5;
+}
+.item__readmore:active{
+    color: #333;
 }
 
 .menu-navigation__item {
@@ -597,6 +611,10 @@ ol {
 .useful-articles__item:hover .item__readmore {
     color: #FFBD54;
 }
+.useful-articles__item_horizontal:active .item__readmore,
+.useful-articles__item:active .item__readmore {
+    color: #333;
+}
 
 .useful-articles__item_horizontal:hover {
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
@@ -723,13 +741,21 @@ ol {
     border-radius: 3px;
 }
 
-.subscription-form__input:hover {
-    border: 1.5px solid #FFBD54;
+.subscription-form__input:hover,
+.question-name:hover,
+.question-email:hover,
+.question-textarea:hover {
+    border: 2px solid #FFBD54;
+}
+.subscription-form__input:active,
+.question-name:active,
+.question-email:active,
+.question-textarea:active {
+    border: 3px solid #FFBD54;
 }
 
 .subscription-form__input:active {
     color: #000;
-    opacity: 0.7;
 }
 
 .subscription-form__input::placeholder {
