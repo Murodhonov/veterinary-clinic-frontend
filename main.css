@@ -87,6 +87,11 @@ a {
     color: #000;
 }
 
+.location-address {
+    text-decoration: none;
+    font-style: normal;
+}
+
 ul,
 ol {
     list-style: none;
@@ -201,19 +206,20 @@ ol {
 
 .logotip-link:hover,
 .logotip-link2:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
-.logotip-link:active .logotip-link2:active {
-    opacity: 0.3;
+.logotip-link:active,
+.logotip-link2:active {
+    opacity: 0.4;
 }
 
 .first-section {
     overflow: visible;
     background-repeat: no-repeat;
     background-size: 860px 820px, 300px 400px;
-    background-position-x: calc(50% - 435px), calc(50% + 560px);
-    background-position-y: calc(50% - 170px), calc(50% + 220px);
+    background-position-x: calc(50% - 435px), calc(50% + 555px);
+    background-position-y: calc(50% - 170px), calc(50% + 80px);
     background-image: url(pics/animals_and_pawbg.png), url(pics/parrot.svg);
 }
 
@@ -235,13 +241,14 @@ ol {
 }
 
 .main-text {
+    width: 450px;
     font-size: 14px;
     margin-top: 15px;
     color: #949494;
 }
 
 .main-title__span {
-    color: #0cc5f9;
+    color: #78C0DE;
 }
 
 .services-btn2,
@@ -271,6 +278,11 @@ ol {
     color: black;
     background-color: #FFBD54;
 }
+.subscription-form__submit:active {
+    color: black;
+    background-color: #FFBD54;
+    opacity: 0.7;
+}
 
 .services-btn:hover {
     background-color: #FFBD54;
@@ -278,7 +290,7 @@ ol {
 }
 
 .services-btn:active {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .services-btn2 {
@@ -294,6 +306,9 @@ ol {
     padding: 30px 0;
     margin: 50px auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .quote-wrapper::before,
@@ -303,13 +318,13 @@ ol {
 }
 
 .quote-wrapper::before {
-    left: -25px;
+    left: 48px;
     top: 30px;
     content: url("./pics/quote_start.svg");
 }
 
 .quote-wrapper::after {
-    right: 0;
+    right: 48px;
     bottom: 58px;
     content: url("./pics/quote_end.svg");
 }
@@ -320,20 +335,22 @@ ol {
     display: block;
     width: 140px;
     height: 0.5px;
-    margin: 0 auto 10px;
+    margin: 0 auto 25px;
     background-color: #949494;
 }
 
 .quote-text::after {
-    margin: 10px auto 10px;
+    margin: 25px auto 10px;
 }
 
 .quote-text {
+    width: 700px;
     color: #949494;
     font-style: italic;
     position: relative;
     padding: 20px 20px;
     text-align: center;
+    font-style: normal;
 }
 
 .quote-author {
@@ -342,6 +359,7 @@ ol {
     margin-bottom: 20px;
     color: #000;
     font-weight: bold;
+    font-style: normal;
 }
 
 .services-main__inside {
@@ -393,7 +411,7 @@ ol {
 
 .cards-list::before:active,
 .cards-list::after:active {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .card-item {
@@ -413,7 +431,7 @@ ol {
 }
 
 .card-item:active {
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .card-title {
@@ -480,7 +498,7 @@ ol {
 }
 
 .card-item__buttons li:nth-child(1):active {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .card-item__buttons li:nth-child(2) {
@@ -495,7 +513,7 @@ ol {
 }
 
 .card-item__buttons li:nth-child(2):active {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .card-item__buttons li:before {
@@ -672,6 +690,7 @@ ol {
 .question-inside {
     width: 450px;
     padding: 40px 30px;
+    margin-left: 30px;
 }
 
 .question-form {
@@ -776,6 +795,10 @@ ol {
 
 .open-hours {
     position: relative;
+}
+
+.footer-address{
+    font-style: normal;
 }
 
 .open-hours::before,
